@@ -5,15 +5,16 @@
 # Site
 title: Blog | GoDotDotDot
 subtitle: LESS is MORE
-description: 博客,Blog,前端,FrontEnd,GoDotDotDot,Hexo
+description: GoDotDotDot个人博客，从事web前端开发工作，崇尚大道至简！
 author: GoDotDotDot
-language:
-timezone:
+language: zh-cn
+timezone: Asia/Shanghai
 email: chukui0202@gmail.com
+keywords: 博客 Blog 前端 FrontEnd GoDotDotDot Hexo Node React
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://blog.godotdotdot.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -71,3 +72,50 @@ theme: indigo
 deploy:
   type: github
   repo: https://github.com/GoDotDotDot/GoDotDotDot.github.io.git
+
+# hexo-neat
+
+# neat_enable: true
+
+# neat_html:
+#   enable: false
+  
+# neat_css:
+#   enable: true
+#   exclude:
+#     - '*.min.css'
+
+# neat_js:
+#   enable: true
+#   mangle: true
+#   output:
+#   compress:
+#   exclude:
+#     - '*.min.js'
+
+
+# minifier
+html_minifier:
+  enable: true
+  exclude: 
+
+css_minifier:
+  enable: true
+  exclude: 
+    - '*.min.css'
+
+js_minifier:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude: 
+    - '*.min.js'
+  
+image_minifier:
+  enable: true
+  interlaced: false
+  multipass: false
+  optimizationLevel: 2
+  pngquant: false
+  progressive: false
