@@ -7,11 +7,10 @@ title: Blog | GoDotDotDot
 subtitle: LESS is MORE
 description: GoDotDotDot个人博客，从事web前端开发工作，崇尚大道至简！
 author: GoDotDotDot
-language: zh-cn
+language: zh-CN
 timezone: Asia/Shanghai
 email: chukui0202@gmail.com
 keywords: 博客 Blog 前端 FrontEnd GoDotDotDot Hexo Node React
-
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://blog.godotdotdot.com
@@ -40,14 +39,23 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
+  enable: false
   line_number: true
   auto_detect: false
   tab_replace:
-
+  
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+  
 # Category & Tag
 default_category: uncategorized
-category_map: 
+category_map:
 tag_map:
 
 # Date / Time format
@@ -65,57 +73,24 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: indigo
+# theme: material_stable
+theme: material
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: github
-  repo: https://github.com/GoDotDotDot/GoDotDotDot.github.io.git
+  type:
 
-# hexo-neat
+# feed:
+#   type: atom
+#   path: atom.xml
+#   limit: 20
+#   hub:
+#   content:
+#   content_limit: 140
+#   content_limit_delim: ' '
 
-# neat_enable: true
-
-# neat_html:
-#   enable: false
-  
-# neat_css:
-#   enable: true
-#   exclude:
-#     - '*.min.css'
-
-# neat_js:
-#   enable: true
-#   mangle: true
-#   output:
-#   compress:
-#   exclude:
-#     - '*.min.js'
-
-
-# minifier
-html_minifier:
-  enable: true
-  exclude: 
-
-css_minifier:
-  enable: true
-  exclude: 
-    - '*.min.css'
-
-js_minifier:
-  enable: true
-  mangle: true
-  output:
-  compress:
-  exclude: 
-    - '*.min.js'
-  
-image_minifier:
-  enable: true
-  interlaced: false
-  multipass: false
-  optimizationLevel: 2
-  pngquant: false
-  progressive: false
+search:
+    use: local
+    path: search.xml
+    field: all
