@@ -206,8 +206,11 @@ sidebar:
     pages:
         关于我:
             link: "/about"
-            icon: person
+            icon: person            
             divider: true
+        我的标签:
+            link: "/tags"
+            divider: false
     article_num:
         use: true
         divider: false
@@ -267,7 +270,7 @@ search:
 analytics:
     google_site_id:
     baidu_site_id:
-    cnzz_site_id:
+    cnzz_site_id: 1261460012
 
 # Leancloud Views
 leancloud:
@@ -279,8 +282,8 @@ leancloud:
 # Busuanzi 不蒜子 Views
 busuanzi: 
     enable: false
-    all_site_uv: true
-    post_pv: true
+    all_site_uv: false
+    post_pv: false
     busuanzi_pure_mini_js: "//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"
 
 # Files Vendors
