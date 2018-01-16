@@ -161,7 +161,7 @@ toc:
 
 # SNS Menu
 sns:
-    email: chukui0202@email.com
+    email: chukui0202@gmail.com
     # facebook: "https://www.facebook.com/facebook"
     twitter: https://twitter.com/GDT_KUI
     googleplus: https://plus.google.com/u/0/101392050637936968928
@@ -189,7 +189,7 @@ sns_share:
 sidebar:
     dropdown:
         Email Me:
-            link: "mailto:chukui0202@email.com"
+            link: "mailto:chukui0202@gmail.com"
             icon: email
     homepage:
         use: true
