@@ -234,15 +234,15 @@ sidebar:
 comment:
     # use: disqus
     # shortname: blog-godotdotdot-com-1
-    use: livere
+    use: gitment
     changyan_appid:
     changyan_conf:
     changyan_thread_key_type: path
     livere_data_uid: MTAyMC8zMjA3OC84NjQy
-    gitment_repo:   # git repo of the hexo
-    gitment_owner:  # git repo's owner
-    gitment_client_id:  # github app client id 
-    gitment_client_secret :  # github app client secret 
+    gitment_repo:  GoDotDotDot.github.io   # git repo of the hexo
+    gitment_owner:  GoDotDotDot # git repo's owner
+    gitment_client_id: 4064a914ca1dd7c04f08 # github app client id 
+    gitment_client_secret : ac750241d86c182f101ebdbaf899555417af6f02 # github app client secret 
     valine_leancloud_appId:  # leancloud application app id
     valine_leancloud_appKey:  # leancloud application app key
     valine_notify: false # valine mail notify (true/false) https://github.com/xCss/Valine/wiki
