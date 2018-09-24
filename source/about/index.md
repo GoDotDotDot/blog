@@ -5,6 +5,10 @@ title: 关于我/About Me
 
 一名前端搬运工，崇尚大道至简！喜欢尝试新鲜事物，喜欢与人交流，喜欢积极向上！
 
+## 简历 Resume
+
+[我的简历](https://blog.godotdotdot.com/about/resume.pdf)
+
 ## 基本信息
 
 - 网络名称：GoDotDotDot
