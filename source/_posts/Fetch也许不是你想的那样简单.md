@@ -1,3 +1,11 @@
+---
+title: Fetch也许不是你想的那样简单
+date: 2018-12-28 22:06:03
+tags: [前端, Fetch] 
+categories: 2018·前端
+description: "本篇主要讲述 Fetch 的一些基本知识点以及我们在生产开发中怎么去使用。"
+---
+
 # 前言
 
 本篇主要讲述 [Fetch](https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API) 的一些基本知识点以及我们在生产开发中怎么去使用。为了能够更好的了解 [Fetch](https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API)，我们希望你对以下知识点有所了解，如果有相关的开发经验，那是最好不过的了。
