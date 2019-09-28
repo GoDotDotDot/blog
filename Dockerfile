@@ -1,11 +1,21 @@
+# build
 FROM node:8.7.0-alpine
 
 WORKDIR /usr/src/app
 
-RUN npm install && npm cache clean --force
+ADD . .
 
-ENV NODE_ENV production
+RUN npm install && npm cache clean --force && npm build
 
-EXPOSE 4000
+# sttic file server
+FROM nginx:1.17.0
 
-CMD [ "npm", "start" ]
+WORKDIR /usr/src/app
+
+COPY --from=0 /usr/src/app/public ./public
+COPY --from=0 /usr/src/app/nginx.conf /etc/nginx/conf.d/default.conf
+
+# 暴露端口
+EXPOSE 80
+
+ENTRYPOINT ["nginx","-g","daemon off;"]
