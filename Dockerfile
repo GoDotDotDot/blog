@@ -3,9 +3,9 @@ FROM node:8.7.0-alpine
 
 WORKDIR /usr/src/app
 
-ADD . .
+COPY . .
 
-RUN npm install && npm cache clean --force && npm build
+RUN npm install && npm cache clean --force && npm run build
 
 # sttic file server
 FROM nginx:1.17.0
