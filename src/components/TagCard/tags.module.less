@@ -1,0 +1,49 @@
+@import (reference) '../../styles/index.less';
+
+.tagCard {
+  position: relative;
+  margin-top: 20px;
+  border-radius: 20px;
+  height: 100%;
+  box-shadow: rgba(167, 167, 167, 0.22) -1px 4px 9px 3px;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.65);
+  cursor: pointer;
+  &:hover {
+    .pending {
+      top: 0%;
+    }
+  }
+  .tagImg {
+    width: 100%;
+    height: 164px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px 20px 0 0;
+    background-size: cover;
+  }
+  .pd20px {
+    padding: 20px;
+  }
+
+  .pending {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    // padding: 15px;
+    text-align: center;
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      border-radius: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+    .pendingText {
+      font-size: 16px;
+    }
+  }
+}
