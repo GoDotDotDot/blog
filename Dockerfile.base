@@ -1,0 +1,10 @@
+# base
+FROM node:12.0.0-alpine
+
+WORKDIR /usr/src/app
+
+COPY package.json yarn.lock ./
+
+COPY . .
+
+RUN yarn && yarn cache clean
