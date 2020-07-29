@@ -6,6 +6,7 @@ COPY package.json yarn.lock ./
 
 RUN yarn
 
+COPY . .
 RUN yarn build
 
 # 暴露端口

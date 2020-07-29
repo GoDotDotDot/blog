@@ -25,8 +25,10 @@ const AboutMe = () => {
       const { name } = item;
       const {
         forks,
+        // eslint-disable-next-line camelcase
         stargazers_count,
         description,
+        // eslint-disable-next-line camelcase
         html_url,
       } = await getGitRepos(name);
       const idx = gitList.findIndex(repo => repo.name === name);

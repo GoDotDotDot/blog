@@ -21,7 +21,7 @@ const Post = ({ data }) => {
   const canonicalUrl = Utils.resolvePageUrl(
     Config.siteUrl,
     Config.pathPrefix,
-    path
+    path,
   );
   return (
     <Layout className="outerPadding">

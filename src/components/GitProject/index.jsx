@@ -11,11 +11,11 @@ const GitProject = props => {
       <h4 className={style.intro}>{intro}</h4>
       <div className={style.row}>
         <div>
-          <FA name="star"></FA>
+          <FA name="star" />
           <span>{stars}</span>
         </div>
         <div>
-          <FA name="code-fork"></FA>
+          <FA name="code-fork" />
           <span>{forks}</span>
         </div>
       </div>

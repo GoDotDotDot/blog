@@ -70,14 +70,14 @@ module.exports = {
       color: '#6f309f',
       disable: true,
     },
-    "02-html": {
+    '02-html': {
       name: 'HTML',
       description:
         'A markup language that powers the web. All websites use HTML for structuring the content.',
       color: '#dd3431',
       disable: true,
     },
-    "01-css": {
+    '01-css': {
       name: 'CSS',
       description:
         'CSS is used to style the HTML element and to give a very fancy look for the web application.',

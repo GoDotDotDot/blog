@@ -14,7 +14,7 @@ spec:
       containers:
         - name: blog
           imagePullPolicy: IfNotPresent
-          image: "godotdotdot/blog:latest"
+          image: godotdotdot/blog:latest
 ---
 apiVersion: v1
 kind: Service

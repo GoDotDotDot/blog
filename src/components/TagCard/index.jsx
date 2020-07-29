@@ -32,15 +32,15 @@ const Card = props => {
   );
 };
 const TagCard = props => {
-  const { img, name, description, color, disable } = props;
+  const { name, disable } = props;
   const tagPage = Config.pages.tag;
   const link = Utils.resolvePageUrl(tagPage, name);
   return !disable ? (
     <Link className={style.tagCard} to={`/${link}`}>
-      <Card {...props}></Card>
+      <Card {...props} />
     </Link>
   ) : (
-    <Card {...props}></Card>
+    <Card {...props} />
   );
 };
 

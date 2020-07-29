@@ -44,7 +44,7 @@ const defaultOptions = {
   headers: {
     'Content-Type': 'application/json',
   },
-  //credentials: 'include', // 跨域传递cookie
+  // credentials: 'include', // 跨域传递cookie
 };
 
 /**
@@ -70,11 +70,11 @@ export default function request(url, options = {}) {
     fetch(url, { ...defaultOptions, ...options, headers })
       .then(checkStatus)
       .then(parseJSON)
-      .then((res) => {
+      .then(res => {
         clearTimeout(abortId);
         resolve(res);
       })
-      .catch((e) => {
+      .catch(e => {
         clearTimeout(abortId);
         reject(e);
       });

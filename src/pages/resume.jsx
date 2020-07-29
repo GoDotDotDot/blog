@@ -48,7 +48,7 @@ export default class Resume extends Component {
             <p>{`Page ${pageNumber || 0} of ${numPages || 0}`}</p>
           </Col>
           <Col span={2}>
-            <Button type="primary" onClick={pageToggle}>{pageNumber === 1 ? 'Next Page' : 'Previous Page'}</Button>
+            <Button type="primary" onClick={pageToggle}>{pageNumber < 3 ? 'Next Page' : 'Home'}</Button>
           </Col>
         </Row>
       </div>
